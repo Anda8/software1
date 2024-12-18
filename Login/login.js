@@ -19,9 +19,5 @@ var password=document.getElementById('pass')
 
   }
 
-  
-
-
-
  }
  

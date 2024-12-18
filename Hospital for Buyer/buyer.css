@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.container{
+    padding: 10px 20px;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+.search-container input:focus {
+    border-color: #007bff;
+}
+.searcher i{
+    position: absolute;
+    top: 16px;
+    left: 200px;
+    opacity: 50%;
+}
+.menu i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.hospital {
+    display: flex;
+    background: white;
+    margin: 15px auto;
+    border-radius: 8px;
+    width: 90%;
+}
+
+.hospital-img {
+    width: 200px;
+    object-fit: cover;
+    height: auto;
+}
+
+.info {
+    padding: 15px;
+    flex: 1;
+}
+
+.info .title {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.info p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.availability div {
+    margin: 5px 0;
+}

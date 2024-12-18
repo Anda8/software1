@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.container{
+    padding: 10px 20px;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+.search-container input:focus {
+    border-color: #007bff;
+}
+.searcher i{
+    position: absolute;
+    top: 16px;
+    left: 200px;
+    opacity: 50%;
+}
+.menu i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+header{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .add{
+        color: green;
+        cursor: pointer;
+        font-size: 18px;
+    }
+}
+
+/* تصميم المستشفيات */
+.hospital {
+    display: flex;
+    background: white;
+    margin: 15px auto;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); */
+    /* overflow: hidden; */
+    width: 90%;
+    /* max-width: 1000px; */
+}
+
+.hospital-img {
+    width: 200px;
+    object-fit: cover;
+    height: auto;
+}
+
+.info {
+    padding: 15px;
+    flex: 1;
+}
+
+.info .title {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.info p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.availability {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.availability div {
+    background: #f2f2f2;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    flex: 1 1 calc(25% - 10px); /* توزيع الصناديق في صف */
+    text-align: center;
+}
+
+.availability div:nth-child(even) {
+    background: #ffe5e5;
+    color: red;
+}
+
+/* تصميم متجاوب للشاشات المتوسطة */
+@media (max-width: 768px) {
+    .hospital {
+        flex-direction: column; /* ترتيب عمودي */
+    }
+
+    .hospital-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .availability div {
+        flex: 1 1 calc(50% - 10px); /* توزيع العناصر في صفين */
+    }
+}
+
+/* تصميم للشاشات الصغيرة */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .info h2 {
+        font-size: 1.2em;
+    }
+
+    .availability div {
+        flex: 1 1 100%; /* كل عنصر في سطر */
+    }
+}

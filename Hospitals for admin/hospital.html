@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals</title>
+    <!-- إضافة مكتبة Font Awesome للأيقونات -->
+    <link rel="icon" href="../homepage/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="search-container">
+            <input name="search" type="search" placeholder="search Anything...">
+            <div class="searcher">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- القائمة الرئيسية للمستشفيات -->
+    <main>
+        <header>
+            <div>
+                <h2>Hospitals</h2>
+                <div>Total: 7</div>
+            </div>
+            <div class="add" onclick="addHospital()">
+                <i class="fa-solid fa-plus"></i>
+                add hospital
+            </div>
+            
+        </header>
+        <!-- المستشفى 1 -->
+        <section class="hospital">
+            <img src="images/1.jpeg" alt="Menoufa University Hospital" class="hospital-img">
+            <div class="info">
+                <div class="title">Menoufa University Hospital (مستشفى جامعة المنوفية)</div>
+                <p>Located in Shebin El-Kom, it is a major public hospital offering a variety of healthcare services.</p>
+                <div class="availability">
+                    <div (click)="editHospital()"><i class="fa-solid fa-pen-to-square"></i> Edit</div>
+                    <div (click)="deleteHospital()"><i class="fa-solid fa-trash"></i> delete</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- المستشفى 2 -->
+        <section class="hospital">
+            <img src="images/2.jpeg" alt="Shebin El-Kom General Hospital" class="hospital-img">
+            <div class="info">
+                <div class="title">Shebin El-Kom General Hospital (مستشفى شبين الكوم العام)</div>
+                <p>This is a well-known hospital in Menoufia providing general medical services.</p>
+                <div class="availability">
+                    <div (click)="editHospital()"><i class="fa-solid fa-pen-to-square"></i> Edit</div>
+                    <div (click)="deleteHospital()"><i class="fa-solid fa-trash"></i> delete</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- المستشفى 3 -->
+        <section class="hospital">
+            <img src="images/3.jpeg" alt="El-Bagour General Hospital" class="hospital-img">
+            <div class="info">
+                <div class="title">El-Bagour General Hospital (مستشفى الباجور العام)</div>
+                <p>Located in El-Bagour, this hospital provides emergency care and inpatient services.</p>
+                <div class="availability">
+                    <div (click)="editHospital()"><i class="fa-solid fa-pen-to-square"></i> Edit</div>
+                    <div (click)="deleteHospital()"><i class="fa-solid fa-trash"></i> delete</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- المستشفى 4 -->
+        <section class="hospital">
+            <img src="images/4.jpeg" alt="Sadat City Hospital" class="hospital-img">
+            <div class="info">
+                <div class="title">Sadat City Hospital (مستشفى السادات العام)</div>
+                <p>Located in Sadat City, it serves the local community with medical services.</p>
+                <div class="availability">
+                    <div (click)="editHospital()"><i class="fa-solid fa-pen-to-square"></i> Edit</div>
+                    <div (click)="deleteHospital()"><i class="fa-solid fa-trash"></i> delete</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- المستشفى 5 -->
+        <section class="hospital">
+            <img src="images/5.jpeg" alt="Tala General Hospital" class="hospital-img">
+            <div class="info">
+                <div class="title">Tala General Hospital (مستشفى طهطا العام)</div>
+                <p>Located in Tala, this hospital provides general medical care and emergency services.</p>
+                <div class="availability">
+                    <div (click)="editHospital()"><i class="fa-solid fa-pen-to-square"></i> Edit</div>
+                    <div (click)="deleteHospital()"><i class="fa-solid fa-trash"></i> delete</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- المستشفى 6 -->
+        <section class="hospital">
+            <img src="images/6.jpeg" alt="Menoufa Specialized Hospital" class="hospital-img">
+            <div class="info">
+                <div class="title">Menoufa Specialized Hospital (مستشفى المنوفية التخصصي)</div>
+                <p>Another key hospital focusing on specialized healthcare services.</p>
+                <div class="availability">
+                    <div (click)="editHospital()"><i class="fa-solid fa-pen-to-square"></i> Edit</div>
+                    <div (click)="deleteHospital()"><i class="fa-solid fa-trash"></i> delete</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
